@@ -3,6 +3,7 @@ package com.riyakumari.ecommerce.controller;
 import com.riyakumari.ecommerce.entity.Category;
 import com.riyakumari.ecommerce.service.CategoryService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -15,6 +16,7 @@ import java.util.List;
 @RequiredArgsConstructor
 public class CategoryController {
 
+    @Autowired
     private CategoryService categoryService;
 
     @GetMapping("/categories")
